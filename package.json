@@ -1,0 +1,25 @@
+{
+  "name": "shoebox-online-api-quickstart-node",
+  "version": "1.0.0",
+  "description": "SHOEBOX Online Node Quickstart",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SHOEBOXAudiometry/shoebox-online-api-quickstart-node.git"
+  },
+  "keywords": [
+    "quickstart"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SHOEBOXAudiometry/shoebox-online-api-quickstart-node/issues"
+  },
+  "homepage": "https://github.com/SHOEBOXAudiometry/shoebox-online-api-quickstart-node#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
