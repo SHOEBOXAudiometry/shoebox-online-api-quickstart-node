@@ -5,6 +5,7 @@ var port = 3000;
 const https = require('https');
 const querystring = require('querystring');
 
+// NOTE: We recommend not deploying applications with API keys in the code.
 const SHOEBOX_API_KEY = 'YOUR-API-KEY'
 const SHOEBOX_API_URL = url.parse('YOUR-API-URL')
 

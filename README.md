@@ -1,4 +1,5 @@
 
+
 SHOEBOX Online API Quickstart - Node
 ===
 This repository contains a server-side quickstart application that fetches results from SHOEBOX Online API when a test is complete.
@@ -70,6 +71,6 @@ Test the application by navigating to your SHOEBOX Online test! Once you complet
 ### Next Steps
 Now that you've confirmed your application is working, it is important that you save the data that is retrieved from the SHOEBOX Online API.
 
-SHOEBOX Online results are exposed through a queue. Once a test is completed, results are stored on a queue, waiting to be served once a fetch request is executed.
+**SHOEBOX Online results are available once as they are exposed through a queue**. 
 
-When a fetch request is executed to SHOEBOX Online, all pending results stored on the queue are returned and the queue is emptied.
+Once a test is completed, results are stored on a queue. When a fetch request is executed to SHOEBOX Online, all pending results stored on the queue are returned and the queue is emptied.
