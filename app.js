@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 var express = require("express");
 var url = require('url')
 var app = express();
@@ -9,7 +11,7 @@ const querystring = require('querystring');
 const SHOEBOX_API_KEY = 'YOUR-API-KEY'
 const SHOEBOX_API_URL = url.parse('YOUR-API-URL')
 
-
+console.log(process.env.SHOEBOX_API_URL)
 // ---------- Notification Webhook ---------- //
 
 /**
@@ -35,11 +37,13 @@ app.get('/shoeboxonline/testcomplete', function (req, res) {
 function fetchResults() {
 	console.log("Fetching Results from SHOEBOX Online API")
 
+	const parsedAPIURL = url.parse(process.env.SHOEBOX_API_URL);
+
 	const requestOptions = {
-		hostname: SHOEBOX_API_URL.hostname,
-		path: SHOEBOX_API_URL.path,
+		hostname: parsedAPIURL.hostname,
+		path: parsedAPIURL.path,
 		headers: {
-			'x-api-key': SHOEBOX_API_KEY
+			'x-api-key': process.env.SHOEBOX_API_KEY
 		}
 	}
 
