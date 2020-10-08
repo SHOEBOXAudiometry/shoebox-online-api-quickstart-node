@@ -2,7 +2,11 @@
 
 SHOEBOX Online API Quickstart - Node
 ===
-This repository contains a server-side quickstart application that fetches results from SHOEBOX Online API when a test is complete.
+This repository contains a server-side quickstart application that fetches results from SHOEBOX Online API when a test is complete. 
+
+## Documentation
+If you would like to read more about the SHOEBOX Online API, an OpenAPI document is [**available here**](https://editor.swagger.io/?url=https://shoeboxonline.com/us-east-1/customer_api_v1.yaml) which provides details on the available endpoints & data formats! 
+
 
 Prerequisites
 ---
@@ -20,9 +24,14 @@ First, we need to install our dependencies from npm. Navigate to the root of the
 npm install
 ```
 ### API Access
-In order to fetch results from the SHOEBOX Online API, the API URL & credentials need to be provided
+In order to fetch results from the SHOEBOX Online API, the API URL & credentials need to be provided.
 
-Edit the `app.js` file and replace the following values
+Create a configuration file for your application:
+```bash
+cp .env.example .env
+```
+
+Edit the `.env` file and provide the following values
 
 * SHOEBOX_API_KEY
 	* Insert your **API Key** that you've obtained from our Customer Portal in the API Keys section
