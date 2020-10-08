@@ -7,11 +7,6 @@ var port = 3000;
 const https = require('https');
 const querystring = require('querystring');
 
-// NOTE: We recommend not deploying applications with API keys in the code.
-const SHOEBOX_API_KEY = 'YOUR-API-KEY'
-const SHOEBOX_API_URL = url.parse('YOUR-API-URL')
-
-console.log(process.env.SHOEBOX_API_URL)
 // ---------- Notification Webhook ---------- //
 
 /**
@@ -53,6 +48,7 @@ function fetchResults() {
 			result += chunk;
 		});
 
+
 		response.on('end', function () {
 			var shoeboxResponse = JSON.parse(result);
 			console.log("Response Received: " + JSON.stringify(shoeboxResponse))
@@ -65,6 +61,9 @@ function fetchResults() {
 			 */
 		});
 
+
+	}).on("error", function (response) {
+		console.error("Failed to fetch SHOEBOX Online Results");
 	});
 
 }
