@@ -7,6 +7,9 @@ This repository contains a server-side quickstart application that fetches resul
 ## Documentation
 If you would like to read more about the SHOEBOX Online API, an OpenAPI document is [**available here**](https://editor.swagger.io/?url=https://shoeboxonline.com/us-east-1/customer_api_v1.yaml) which provides details on the available endpoints & data formats! 
 
+We also have knowledge base articles:
+[For Admin Users: How SHOEBOX Online API works](https://help.shoebox.md/Content/SBO/Automated_Data_Transfer__API_Integration_/For_Admin_Users.htm?tocpath=SHOEBOX%C2%AE%20Online%7CAutomated%20Data%20Transfer%20with%20the%20SHOEBOX%20Online%20API%7C_____1)
+[For Developers: Getting started with SHOEBOX Online API](https://help.shoebox.md/Content/SBO/Automated_Data_Transfer__API_Integration_/For_Developers.htm?tocpath=SHOEBOX%C2%AE%20Online%7CAutomated%20Data%20Transfer%20with%20the%20SHOEBOX%20Online%20API%7C_____2)
 
 Prerequisites
 ---
